@@ -3,6 +3,9 @@ from random import randint
 # 100 mal würfel simulieren
 # anzahl der 1er, 2er usw. ausgeben
 
+print("Wuerfel-Simulator")
+anzahl = int(input("Wie oft soll gewuerfelt werden? "))
+
 einser = 0
 zweier = 0
 dreier = 0
@@ -10,7 +13,7 @@ vierer = 0
 fuenfer = 0
 sechser = 0
 
-for i in range(0,100):
+for i in range(0,anzahl):
     zahl = randint(1,6)
     if (zahl == 1):
         einser+= 1
@@ -25,6 +28,7 @@ for i in range(0,100):
     if (zahl == 6):
         sechser+= 1
 
+print("Anzahl Wuerfe: ", anzahl)
 print("1er : ", einser)
 print("2er : ", zweier)
 print("3er : ", dreier)
